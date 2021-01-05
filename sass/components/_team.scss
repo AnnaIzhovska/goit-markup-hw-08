@@ -1,0 +1,85 @@
+.team{
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+    .team-photo{
+        margin-right: 30px;
+        background-color: var(--primary-white-color);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        @media screen and (min-width: 480px){
+           margin-right: 0;
+           width: 450px;
+           margin-bottom: 30px;
+        }
+        
+        &:nth-child(4){
+        margin-right: 0;
+        @media screen and (min-width: 480px){
+            margin-bottom: 0;}
+    }}
+        
+        .title{
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;}
+        
+        .text{
+        margin-top: 0;
+        margin-bottom: 16px;
+        text-align: center;}
+    img{
+        display: block;
+        margin-bottom: 30px;
+    @media screen and (min-width: 480px){
+        width: 450px;}
+    }}
+
+    &-join{
+  
+        .join-list{
+            list-style: none;
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+            align-items: center;}
+
+        .join-item{
+            border-radius: 50%;}
+        
+        .link-social{
+            &:hover,:focus{
+                background-color: #2196F3;
+                color: white;}}
+        .icon{
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            transition-property:background-color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--timing-fuction);
+            
+            &:hover,:focus{
+            color: var(--primary-white-color);}}}}
+
+.section{
+    &-team{
+        background-color: #F5F4FA;;
+    .team-join{
+        display: block;
+        margin-top: 20px;
+        padding: 0;}}
+    &-title .team-list{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;}}

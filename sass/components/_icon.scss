@@ -1,0 +1,14 @@
+.icon{
+
+    &-form{
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+     
+        width: 18px;
+        height: 18px;
+     
+        fill:currentColor;
+        color:#000;
+        transition: fill 250ms var(--timing-fuction);}}

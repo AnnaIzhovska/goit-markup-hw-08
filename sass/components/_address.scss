@@ -1,0 +1,30 @@
+.address{
+
+    &-list{
+            margin: 0; 
+            padding: 0; 
+            list-style: none;}
+    &-item .link{
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            font-style: normal;
+            text-decoration: none;
+            color: var(--primary-white-color);}  
+        
+    &-item {
+        margin-bottom: 9px;
+
+        &:last-child{
+                margin-bottom: 0;}
+
+        .contacts{
+             color: rgba(255, 255, 255, 0.6) ;}}
+}
+
+@media screen and (min-width: 480px){
+.footer__address-list{
+        margin-bottom: 60px;
+}}

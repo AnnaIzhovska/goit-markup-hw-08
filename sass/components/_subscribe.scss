@@ -1,0 +1,12 @@
+.subscribe{
+    &-text{
+        margin-right: 10px;}
+}
+.container{
+    &-subscribe{
+    display: block;
+    .title{
+        color: var(--primary-white-color);
+        margin: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;}}}

@@ -1,0 +1,35 @@
+.work{
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            display: block;       
+        }}
+    
+    &-photo{
+    margin-right: 30px;
+    display: flex;
+    position: relative;
+        &:nth-child(3){
+    margin-right: 0;}}
+
+    &-description{
+        position: absolute;
+        bottom: 0;
+        width: 370px;
+        background: rgba(47, 48, 58, 0.8); 
+        
+        .text{
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-white-color);
+         
+        margin: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;}}
+}

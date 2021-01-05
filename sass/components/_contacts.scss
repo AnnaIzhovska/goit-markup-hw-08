@@ -1,0 +1,30 @@
+.contacts {
+    align-items: center;
+    margin-left: auto;
+    .link{
+        color: var(--primaty-text-color);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        align-items: center;
+     
+        // padding-top: 32px;
+        // padding-bottom: 32px;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-fuction);}
+    .number{
+        margin-right:0;}}
+
+.container >.contacts .link{
+    fill: currentColor;
+    color: #757575;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: (--timing-fuction);
+
+&:hover,&focus{
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}}

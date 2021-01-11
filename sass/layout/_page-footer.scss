@@ -6,14 +6,29 @@
     .logo-studio{
         color: #ffffff;
         margin-right: 0;
-        @media screen and (min-width: 480px){
-          margin: 0;}
-    }
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // @media screen and (min-width: 480px){
+        //   margin: 0;}
+        @media screen and (min-width: 768px){
+            margin-left: 76px;}
+        @media screen and (min-width: 1200px){
+            margin-left: 0; }
+
+        }
 &__logo-studio{
     justify-content: center;
+  
+    @media screen and (min-width: 1200px){
+       justify-content:start;}
 }
     .container{
-        align-items: baseline;}
+        align-items: baseline;
+        @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+             }
+        
     
     .link-social:hover,
     .link-social:focus{
@@ -23,4 +38,4 @@
         fill: #ffffff;
         width: 20px;
         height: 20px;}
-}
+}}

@@ -5,7 +5,7 @@
    transform: scale(1) translate(-50%, -50%);
    transition: transform 250ms var(--timing-fuction);
 
-   /* padding: 15px; */
+//    padding: 15px;
    width: 528px;
    min-height: 581px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -13,11 +13,17 @@
    0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    background-color: #fff;
-
+   @media screen and(max-width:479px){
+    width: 100%;
+  }
    @media screen and (min-width: 480px){
        width: 450px;
-       min-height: 609px;
+       height: 609px;
    }
+   @media screen and (min-width: 1200px){
+    width:528px;
+    min-height: 581px;
+}
 
 
    .close{
@@ -35,7 +41,7 @@
    border: 1px solid rgba(0, 0, 0, 0.1);
    transition: fill 250ms var(--timing-fuction);
    cursor: pointer;
-   
+
    &:hover,&:focus{
     fill: var(--accent-color);}}}
 
@@ -44,10 +50,18 @@
             padding: 40px;
             width: 528px;
            min-height: 581px;
+           @media screen and(max-width:479px){
+             width: 100%;
+           }
         @media screen and (min-width: 480px){
              width: 450px;
-             min-height: 609px;
+             height: 609px;
            }
+           @media screen and (min-width: 1200px){
+            width:528px;
+            min-height: 581px;
+        }
+
         .text{
             margin: 0;
             margin-bottom: 12px;
@@ -57,7 +71,8 @@
             text-align: center;
             letter-spacing: 0.03em;
         
-            color: #212121;}
+            color: #212121;
+          }
         .accept{
                 display: flex;
                 align-items: center;
@@ -73,6 +88,35 @@
                 letter-spacing: 0.03em;
                 
                 color: #757575;
+
+                @media screen and(max-width: 479px){
+                  width: 100%;
+                }
+
+                @media screen and (min-width: 480px){
+                    width: 370px;
+                    min-height: 15px;
+                   
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.16;
+
+                  }
+                  
+                  @media screen and (min-width: 1200px){
+
+                    width: 100%;
+                    min-height: 24px;
+                    margin-bottom: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.71;
+                    
+                    letter-spacing: 0.03em;
+                  }
+
                 .link{
                     text-decoration-skip-ink: none;
                     color: var(--accent-color);}}}}

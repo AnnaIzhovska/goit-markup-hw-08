@@ -5,7 +5,7 @@
         margin-top: 20px;
         padding: 0;
         margin: 0;
-        @media screen and (min-width: 480px){
+        @media screen and (max-width: 1199px){
                     margin-bottom: 60px;
             }
     }
@@ -20,10 +20,19 @@
 .container{
     &-join{
     display: block;
+    @media screen and (min-width: 768px){
+        margin-left: 165px;}
+        @media screen and (min-width: 1200px){
+            margin-left: 70px;
+            margin-right: 93px;
+        }
     .title{
         color: var(--primary-white-color);
         margin: 0;
         margin-bottom: 20px;
-        text-transform: uppercase;} 
+        text-transform: uppercase;
+        @media screen and (min-width: 1200px){
+            display: flex;
+        justify-content: start;}} 
     .join-item{
             display: block;}}}

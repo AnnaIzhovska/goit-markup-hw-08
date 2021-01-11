@@ -19,7 +19,17 @@
        
         margin-right: 7px;
        
-        transition: border 250ms var(--timing-fuction);}
+        transition: border 250ms var(--timing-fuction);
+        @media screen and (min-width: 480px){
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px){
+            margin-top: 4px;
+            margin-bottom: 5px;
+            margin-right: 7px;
+        }
+    }
 
         &:checked  + .checkbox-icon{
             background-color: var(--accent-color);

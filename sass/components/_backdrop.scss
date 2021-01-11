@@ -10,6 +10,8 @@
     transition: opacity 250ms var(--timing-fuction);
     
     z-index: 100;
+
+    overflow-y: scroll;
     @media screen and (max-width: 1199px){
         width: 100%;
         min-height: 796px;

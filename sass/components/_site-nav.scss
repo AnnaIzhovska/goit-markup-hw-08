@@ -3,17 +3,18 @@
 
     @media screen and (min-width: 768px){
         display: flex;
+
     }
     @media screen and (min-width: 1200px){
         display: flex;
     }
 
     .item {
-        @media screen and(min-width: 0px) {
+        @media screen and(max-width: 767px) {
             padding-bottom: 40px;
         }
         &:last-child{
-            @media screen and(min-width: 0px) {
+            @media screen and(max-width: 767px) {
                 padding-bottom: 60px;
             }  
         }
@@ -42,17 +43,14 @@
         @media screen and(min-width: 480px) {
             font-weight: 500;
             font-size: 18px;
-            line-height: 21px;
+            line-height: 1.16;
         }
         @media screen and (min-width: 768px){
             display: flex;
             padding-top: 32px;
             padding-bottom: 32px;
-        }
-        @media screen and (min-width: 1200px){
-            display: flex;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            font-size: 14px;
+            line-height: 1.14;
         }
 
     
@@ -74,8 +72,8 @@
                 border: 2px solid #2196F3;
                 background-color: var(--accent-color);
                 border-radius: 2px; 
-        @media screen and(min-width: 480px) {
-            bottom: -15px;
+        @media screen and(max-width: 767px) {
+            bottom: -10px;
                 }
         @media screen and(min-width: 1200px){
             bottom: -1px;

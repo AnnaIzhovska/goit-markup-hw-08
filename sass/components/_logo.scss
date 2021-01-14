@@ -1,3 +1,37 @@
 .link .logo{
     margin-right: 10px;
 }
+
+  
+
+
+.mail .logo{
+        width: 16px;
+        height: 12px; 
+    @media screen and(min-width: 768px){
+        width: 15;
+        height: 10;
+    }
+
+    @media screen and(min-width: 1200px){
+        width: 16px;
+        height: 12px; 
+    }
+}
+
+.number .logo{
+    width: 10px;
+    height: 16px;
+
+    @media screen and(min-width: 768px){
+        width: 10;
+        height: 14;
+    }
+    @media screen and(min-width: 1200px){
+        width: 10px;
+        height: 16px;
+    
+    }
+
+}
+

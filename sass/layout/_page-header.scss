@@ -2,23 +2,25 @@
     margin: 0 auto;
     border-bottom: 1px solid #ECECEC;
     position: relative;
+
+    // &-contacts{
+    //     @media screen and(min-width: 768px){
+    //        display: flex;  
+    //        align-items: center;
+    //        justify-content: space-between;
+    //     }}
   .container{
     display: flex;
-    @media screen and(max-width: 767px){
-        display: block;
-
-    }    
-    @media screen and(min-width: 768px){
-        display: flex;
-        flex-wrap: nowrap;     
-    }
   }
 
 .contacts{
-    @media screen and(min-width: 768px){
+    
+    @media screen and(min-width:768px) {
+        
+    }
+    @media screen and(min-width: 1200px){
         display: flex;
         flex-wrap: wrap;
-     margin-left: auto;
    }
 .mail{
     @media screen and(max-width: 767px){
@@ -30,67 +32,3 @@
 }
 }
 }
-
-.menu-burger{
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-
-    @media screen and(min-width: 768px){
-        display: none;
-    }
-
-    &:hover .icon-burger-close {
-        fill: #2196F3;
-    }
- 
-.icon-burger{
-    display: none;
-
-}
-&.is-open {
-    &:hover .icon-burger{
-        fill:#2196F3;
-    }
-    .icon-burger{
-        display: block;
-
-        }
-    .icon-burger-close{
-        display: none;}
-    }}
-
-    .burger-container{
-        background-color: var(--primary-white-color);
-        text-align: center;
-        font-size: 18px;
-
-        display: flex;
-              
-        z-index: 100;
-        @media screen and(max-width: 767px){
-            display: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-            
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100vw;
-        padding: 60px;
-        }
-
-        // @media screen and(min-width: 768px){
-        //     display: flex;
-        //     flex-grow: 1;
-        // }
-
-        &.is-open{
-            display: block;
-
-            @media screen and(min-width: 768px){
-                display: flex;
-            }
-
-        }}
-    

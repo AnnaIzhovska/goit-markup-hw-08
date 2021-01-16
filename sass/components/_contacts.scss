@@ -1,13 +1,11 @@
 .contacts {
     align-items: center;
-    margin-left: auto;
-
+    margin: auto 0;
     .link{
         color: var(--primaty-text-color);
         text-decoration: none;
         letter-spacing: 0.02em;
         font-weight: 500;
-        // align-items: center;
 
         fill: currentColor;
         color: #757575;
@@ -30,6 +28,8 @@
         }
 
         @media screen and(min-width: 768px){
+            display: flex;
+            align-items: center;   
             font-size: 12px;
             line-height: 1.16;
             }
